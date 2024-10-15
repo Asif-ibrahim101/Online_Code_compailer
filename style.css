@@ -1,0 +1,79 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.CodeMirror {
+    height: 500px;
+}
+
+button {
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#run-btn:hover {
+    background-color: #6a5acd;
+}
+
+#clear-btn:hover {
+    background-color: #5a6268;
+}
+
+#save-btn:hover {
+    background-color: #28a745;
+}
+
+#load-btn:hover {
+    background-color: #17a2b8;
+}
+
+#theme-btn:hover {
+    background-color: #868e96;
+}
+
+#editor,
+#output {
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+footer {
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4a4a4a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.line-error {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#editor {
+    resize: vertical;
+    /* Allow vertical resizing only */
+    overflow: auto;
+    /* Ensure content scrolls within the editor if it overflows */
+    min-height: 200px;
+    /* Set a minimum height so the editor can't be resized too small */
+    max-height: 800px;
+    /* Optional: Set a maximum height if you want to limit resizing */
+}
